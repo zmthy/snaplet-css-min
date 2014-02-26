@@ -34,17 +34,12 @@ import qualified Data.Text.Lazy.Builder as LT
 import qualified Data.ByteString.UTF8   as BS
 
 ------------------------------------------------------------------------------
-import Control.Applicative    ((<$), (<$>), (<*>))
 import Control.Exception      (Exception (..), SomeException (..), throw)
 import Control.Lens           (Lens', (<&>), over, view)
-import Control.Monad          (unless)
-import Control.Monad.IO.Class (liftIO)
-import Control.Monad.State    (get, modify)
 import Data.List              (isSuffixOf)
 import Data.Text              (Text)
 import Data.Typeable          (Typeable, cast)
-import Snap.Core
-import Snap.Snaplet
+import Snap
 import System.FilePath        ((</>))
 import System.Directory       (doesFileExist)
 import Text.CSS.Parse         (NestedBlock, parseNestedBlocks)
