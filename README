@@ -1,0 +1,7 @@
+A Snaplet for minifying and caching CSS files.
+
+Nest this Snaplet inside your own, and place your CSS files in snaplets/css-min.
+
+The minifier just parses and renders the contents of the files with css-text, so
+the minification is not complete. It will remove most whitespace, though.
+
